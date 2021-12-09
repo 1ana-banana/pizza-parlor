@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <script src = "js/jquery-3.6.0.js"></script>
+    <script src = "js/scripts.js"></script>
+    <link rel = "stylesheet" href = "css/bootstrap.css">
+    <link rel = "stylesheet" href = "css/styles.css">
+    <title>🍕Ana's Incredible Pizza Emporium 🍕</title>
+  </head>
+  <body>
+    <div class = "container">
+      <div class = "page-header">
+        <h1>CHOOSE YOUR <strike>FIGHTER</strike> 🍕PIZZA🍕</h1>
+      </div>
+      <div class = "row">
+        <div class "col-md-8" id = "orderDisplay">
+          <h2>Order Here!</h2>
+          <form id = "orderForm">
+            <div class = "row">
+              <div class = "col-md-6">
+                <!--Pizza Size-->
+                <div class = "form-group">
+                  <label>Pizza Size (inches):</label>
+                  <div class="radio">
+                    <label><input name="size" type="radio" value="small">Small $11</label>
+                  </div>
+                  <div class="radio">
+                    <label><input name="size" type="radio" value="medium" checked>Medium $13</label>
+                  </div>
+                  <div class="radio">
+                    <label><input name="size" type="radio" value="large">Large $16</label>
+                  </div>
+                </div>
+                <!--Extra Cheese-->
+                <div class  = "form group">
+                  <label>Would you like extra cheese?: </label>
+                  <div class="radio">
+                    <label><input name="cheese" type="radio" value="yes" checked>Yes! $3</label>
+                  </div>
+                  <div class="radio">
+                    <label><input name="cheese" type="radio" value="no">No</label>
+                  </div>
+                </div>
+                <!--Protein Toppings -->
+                <label>Protein Toppings ($2 each): </label>
+                <div class = "checkbox">
+                  <label><input name = "meats" type = "checkbox" value = "italiansausage">Italian Sausage</label>
+                </div>
+                <div class = "checkbox">
+                  <label><input name = "meats" type = "checkbox" value = "bulgogi">Bulgogi</label>
+                </div>
+                <div class = "checkbox">
+                  <label><input name = "meats" type = "checkbox" value = "firechicken">Fire Chicken</label>
+                </div>
+                <div class = "checkbox">
+                  <label><input name = "meats" type = "checkbox" value = "pepperoni">Pepperoni</label>
+                </div>
+                <div class = "checkbox">
+                  <label><input name = "meats" type = "checkbox" value = "wagyu">Wagyu</label>
+                </div>
+              </div>
+            </div>
+            <!--Breads-->
+            <div class = "col-md-6">
+              <div class = "form-group">
+                <label>Choose your crusty: </label>
+                <div class = "radio">
+                  <label><input name = "crust" type ="radio" value = "thin">Thin Crusty</label>
+                </div>
+                <div class = "radio">
+                  <label><input name = "crust" type ="radio" value = "cheesy">Cheesy Crust🧀</label>
+                </div>
+                <div class = "radio">
+                  <label><input name = "crust" type ="radio" value = "goguma">Goguma (sweet potato)</label>
+                </div>
+              </div>
+              <!--Non-protein toppings-->
+              <div class = "form-group">
+                <label>Non-Protein Toppings ($0.50 each): </label>
+                <div class = "checkbox">
+                  <label><input name = "nonprotein" type = "checkbox" value = "garlic">Garlic</label>
+                </div>
+                <div class = "checkbox">
+                  <label><input name = "nonprotein" type = "checkbox" value = "onion">Onion</label>
+                </div>
+                <div class = "checkbox">
+                  <label><input name = "nonprotein" type = "checkbox" value = "olives">Olives</label>
+                </div>
+                <div class = "checkbox">
+                  <label><input name = "nonprotein" type = "checkbox" value = "mushroom">Mushrooms</label>
+                </div>
+                <div class = "checkbox">
+                  <label><input name = "nonprotein" type = "checkbox" value = "greenpepper">Green Pepper</label>
+                </div>
+                <div class = "checkbox">
+                  <label><input name = "nonprotein" type = "checkbox" value = "pineapple">Pineapple</label>
+                </div>
+                <div class = "checkbox">
+                  <label><input name = "nonprotein" type = "checkbox" value = "banana">Banana</label>
+                </div>
+                <div class = "checkbox">
+                  <label><input name = "nonprotein" type = "checkbox" value = "kale">Kale</label>
+                </div>
+                <div class = "checkbox">
+                  <label><input name = "nonprotein" type = "checkbox" value = "brusselsprouts">Brussel Sprouts</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class = "btn btn-success" type = "submit">Add to Cart</button>
+          </form>
+        </div>
+        <!--Shopping Cart Display-->
+        <div class = "col-sm-6">
+          <h3>Your Pizza Order: </h3>
+          <ul id = "pizzaList">
+
+          </ul>
+          <div id = "pizzaDetails">
+            <h4></h4>
+            <p>Non-proteins: <span id = "nonprotein"></span></p>
+            <p>Proteins: <span id = "meats"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
