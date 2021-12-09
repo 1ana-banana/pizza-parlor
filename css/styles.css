@@ -1,0 +1,16 @@
+.form-group {
+  padding-bottom: 25px;
+}
+
+#pizzaDetails {
+  display: none;
+}
+
+.pizza {
+  cursor: pointer;
+  color: lavenderblush
+}
+
+.pizza:hover {
+  text-decoration: lightpink underline;
+}
