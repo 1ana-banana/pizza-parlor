@@ -14,8 +14,7 @@ Clone this repository and click on index.html.
 
 ## Known Bugs
 
-When using "add to cart" button, screen fullsizes and blacks out, but once un-full-sized it works as intended. (12/09/2021)
-
+n/a
 
 ## Technologies Used
 
