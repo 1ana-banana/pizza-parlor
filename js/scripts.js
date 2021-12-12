@@ -71,7 +71,7 @@ $(document).ready(function() {
     var newPizza = new Pizza(size, crust, cheese, nonprotein, meats);
     newPizza.calculatePrice();
     $('#pizzaList').append('<li><span class="pizza">' + newPizza.shortDescription() + '</span></li>');
-    document.getElementById("orderForm").requestFullscreen();
+    document.getElementById("orderForm");
     $(".pizza").last().click(function() {
       $("#pizzaDetails").show();
       $("#pizzaDetails h5").show();
